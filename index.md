@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my blog"
+title: "@lmyslinski's Tech Blog"
 ---
 
-I'm glad you are here. I plan to talk about ...
+A place where I write about IT, web3 and entrepreneurship 
