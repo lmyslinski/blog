@@ -2,7 +2,7 @@ title: Lmyslinki's Tech Blog
 author: Łukasz Myśliński
 email: I'll need need some new address for this
 description: > # this means to ignore newlines until "baseurl:"
-A place where I write about coding and all kinds of stuff
+- A place where I write about coding and all kinds of stuff
 # social links
 twitter_username: lmyslinski # DO NOT include the @ character, or else the build will fail!
 github_username:  lmyslinski # DO NOT include the @ character, or else the build will fail!
