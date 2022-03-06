@@ -1,7 +1,11 @@
 title: Lmyslinki's Tech Blog
+url: https://www.markdownguide.org # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+
+
 author: Łukasz Myśliński
 email: I'll need need some new address for this
-description: A place where I write about coding and all kinds of stuff
+description: WTF
 # social links
 twitter_username: lmyslinski # DO NOT include the @ character, or else the build will fail!
 github_username:  lmyslinski # DO NOT include the @ character, or else the build will fail!
