@@ -16,14 +16,14 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: Europe/Warsaw
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: Lmyslinski's Tech Blog                          # the main title
 
-tagline: Thoughts on building tech products, enterprenourship and web3   # it will display as the sub-title
+tagline: Thoughts on tech stuff   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Thoughts on building tech products, enterprenourship and web3
@@ -73,7 +73,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:  light # [light|dark]
+theme_mode:   # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
