@@ -3,9 +3,9 @@ layout: post
 title:  "Tech debt is your fault"
 date:   2022-11-17 00:00:00 +0000
 categories: tech leadership product engineering
+image:
+  path: /assets/img/tech-debt.png
 ---
-
-![tech-debt](/assets/img/tech-debt.png)
 
 ## Introduction
 
