@@ -23,10 +23,10 @@ timezone: Europe/Warsaw
 
 title: Lmyslinski's &zwnj;&zwnj;&zwnj;Tech Blog                          # the main title
 
-tagline: Thoughts on building tech products, enterprenourship and web3   # it will display as the sub-title
+tagline: I write about various technical topics and entrepreneurship.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Thoughts on building tech products, enterprenourship and web3
+  I write about various technical topics and entrepreneurship.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://lmyslinski.com'
