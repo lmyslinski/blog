@@ -23,10 +23,10 @@ timezone: Europe/Warsaw
 
 title: Lmyslinski's &zwnj;&zwnj;&zwnj;Tech Blog                          # the main title
 
-tagline: I write about various technical topics and entrepreneurship.   # it will display as the sub-title
+tagline: Founder @ MLnative. Software engineer with close to 10 years of commercial experience. MLOps and JVM Expert.
 
 description: >-                        # used by seo meta and the atom feed
-  I write about various technical topics and entrepreneurship.
+  Founder @ MLnative. Software engineer with close to 10 years of commercial experience. MLOps and JVM Expert.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://lmyslinski.com'
