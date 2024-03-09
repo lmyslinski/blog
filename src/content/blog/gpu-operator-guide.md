@@ -1,5 +1,5 @@
 ---
-ogImage: ../../assets/images/AstroPaper-v4.png
+ogImage: ../../assets/images/happy-nvidia.png
 author: Lukasz Myslinski
 pubDatetime: 2023-09-27T00:00:00Z
 title:  "A guide to NVIDIA's GPU Operator"
