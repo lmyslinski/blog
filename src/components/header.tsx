@@ -1,4 +1,3 @@
-import { GithubIcon } from "./github-icon";
 import { ModeToggle } from "./mode-toggle";
 import { Separator } from "./ui/separator";
 
@@ -14,7 +13,12 @@ export default function Header() {
           </a>
         </div>
         <div className="flex items-center space-x-4">
-          <GithubIcon />
+          <a className="text-muted-foreground" href="/">
+            Home
+          </a>
+          <a className="text-muted-foreground" href="/blog">
+            Articles
+          </a>
           <Separator orientation="vertical" />
           <ModeToggle />
         </div>

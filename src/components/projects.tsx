@@ -10,16 +10,21 @@ export default function ProjectsSection({}: ProjectsSectionProps) {
         <li>
           <a className="underline" href="https://cvtoblind.com">
             CvToBlind
-          </a>
+          </a>{" "}
           - Convert CVs to Sales-Ready Profiles in Seconds.
         </li>
         <li>
-          <a className="underline" href="https://cvtoblind.com">
+          <a className="underline" href="https://mlnative.com">
             MLNative
           </a>{" "}
           - an MLOps platform for GPU inferences
         </li>
-        <li>3rd level of one-liners : 20 gold coins</li>
+        <li>
+          <a className="underline" href="https://jsonformatter.lmyslinski.com/">
+            jsonformatter
+          </a>{" "}
+          - a small util to format JSON
+        </li>
       </ul>
     </div>
   );
