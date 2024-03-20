@@ -1,15 +1,11 @@
 ---
-// Import the <Image /> component
 import { Image } from "astro:assets";
-// Import a reference to the image itself
 import myImage from "../../public/prof-close.jpeg";
 ---
 
 <div class="flex flex-col items-start justify-center w-full mt-8">
   <div class="flex items-center gap-2">
-    <!-- <img class="rounded-full w-16" src="/prof-close.jpeg" alt="profile pic" /> -->
     <Image class="rounded-full w-16" src={myImage} alt="A very cool penguin!" />
-
     <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
       Hi, I'm Łukasz.
     </h1>
