@@ -4,11 +4,6 @@ import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
-import astroRemark from "@astrojs/markdown-remark";
-
-
-
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://lmyslinski.com',
