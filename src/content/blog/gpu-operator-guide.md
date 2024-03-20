@@ -17,14 +17,14 @@ I've spent a significant amount of time working with GPUs in Kubernetes. As I wa
 
 ## What is the GPU Operator?
 
-The GPU Operator is a Kubernetes Operator for automatically provisioning and managing Nvidia GPU’s on top of Kubernetes. Once fully initialized, GPU’s are exposed as resources available on Kubernetes nodes. As simple as this sounds, it’s easier said than done:
+The GPU Operator is a Kubernetes Operator for automatically provisioning and managing Nvidia GPU's on top of Kubernetes. Once fully initialized, GPU's are exposed as resources available on Kubernetes nodes. As simple as this sounds, it's easier said than done:
 
 - Different cloud providers use different sets of node images and driver versions
-- Some cloud providers allow you to use dedicated node images with GPU’s initialized, while others don’t
-- The drivers offered by the vendors might be outdated and not support the GPU you’re trying to use
+- Some cloud providers allow you to use dedicated node images with GPU's initialized, while others don't
+- The drivers offered by the vendors might be outdated and not support the GPU you're trying to use
 - The initialization of each GPU requires various libraries and binaries to be available on the host
 
-Most of these issues are non-existent when leveraging the GPU Operator. It completely abstracts the platform you’re on, which means you no longer need to care whether you’re running on GCP, AWS, or on-premise. This is a huge win from a developer's perspective. 
+Most of these issues are non-existent when leveraging the GPU Operator. It completely abstracts the platform you're on, which means you no longer need to care whether you're running on GCP, AWS, or on-premise. This is a huge win from a developer's perspective. 
 
 ### GPU Operator components
 
@@ -39,7 +39,7 @@ It is important to point out that the GPU Operator bundles together a set of dif
 
 That's a lot of components. Let's separate them into two categories - the necessary, and the optional ones. For practical purposes, only **the driver, container toolkit, and device plugin are mandatory** for getting the GPUs to work with k8s. 
 
-![Nvidia kubernetes](/assets/img/nvidia-k8s.png){:class="img-responsive"}
+![Nvidia kubernetes](/images/nvidia-k8s.png)
 
 This chart roughly explains how these components work together -  I'm pretty sure that the reality is more complex than this, but this simplification makes it much easier to understand what's going on. Much like we have different abstractions for interacting with regular physical hardware (assembly, native code, native library and so on), the same holds true for GPUs. 
 
@@ -51,7 +51,7 @@ It also means that the **components higher in this tree have a dependency on the
 
 ### First steps
 
-Nvidia lists a ton of options and components in the [docs](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html). Let’s start by simply installing the operator with helm:
+Nvidia lists a ton of options and components in the [docs](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html). Let's start by simply installing the operator with helm:
 
 `helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace`
 
@@ -66,7 +66,7 @@ gpu-operator-node-feature-discovery-worker-grkxz              1/1     Running   
 ```
 
 - The actual `gpu-operator` - a supervision & reconcilliation service
-- `node-feature-discovery` running in master-slave mode. A worker is spawned on each cluster node, tasked with detecting physical GPU’s attached to the node.
+- `node-feature-discovery` running in master-slave mode. A worker is spawned on each cluster node, tasked with detecting physical GPU's attached to the node.
 
 Once the `node-feature-discovery` daemon detects the GPU, it will label the node with relevant labels (ex. `nvidia.com/gpu.deploy.device-plugin=true`), depending on the operator configuration. Then, the actual GPU operator components will be deployed via daemonsets.
 
@@ -240,7 +240,7 @@ $ kubectl get node aks-workspacegpu-15563590-vmss000003 -o json | jq '.status.ca
 }
 ```
 
-And that’s pretty much it - as soon as the `"nvidia.com/gpu"` resource is available, the GPU is ready to roll and the kubelet agent will start assigning gpu pods to the node. 
+And that's pretty much it - as soon as the `"nvidia.com/gpu"` resource is available, the GPU is ready to roll and the kubelet agent will start assigning gpu pods to the node. 
 
 ### Post-setup validation
 
@@ -261,7 +261,7 @@ If all of these have passed, the operator validator will be running & print out 
 
 Finally, I'd like to share some additional insights that I wish I found out about sooner:
 
-### Don’t use Docker
+### Don't use Docker
 
 Even though plenty of Nvidia's docs mention Docker, most cloud providers no longer use Docker and don't even allow it on managed Kubernetes instances. Your best bet is sticking with `containerd` eveywhere. 
 
