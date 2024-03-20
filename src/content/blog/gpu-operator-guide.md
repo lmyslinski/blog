@@ -1,9 +1,7 @@
 ---
 title: "A guide to NVIDIA's GPU Operator"
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
 date:   '2022-11-17'
-heroImage: '/blog-placeholder-3.jpg'
 ---
 
 # A guide to NVIDIA's GPU Operator
