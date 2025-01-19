@@ -1,0 +1,34 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+const talks = [
+    {
+        title: "Building production-ready LLM software",
+        link: "https://www.youtube.com/watch?v=Bls4z88NM-g",
+        date: new Date("2024-04"),
+    },
+];
+---
+
+<div class="mt-8 w-full">
+    <h2
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+    >
+        Talks
+    </h2>
+    <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
+        {
+            talks.map((talk) => (
+                <li>
+                    <a class="underline" href={talk.link}>
+                        {talk.title}
+                    </a>
+                    <p>
+                        <FormattedDate date={talk.date} />
+                    </p>
+                </li>
+            ))
+        }
+    </ul>
+    <ul></ul>
+</div>
