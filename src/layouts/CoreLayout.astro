@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/header";
+import PostHog from "../components/posthog.astro";
 
 const { title } = Astro.props;
 ---
@@ -9,6 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={""} />
+    <PostHog />
   </head>
   <body>
     <div class="flex flex-col items-center h-full">
