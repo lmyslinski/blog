@@ -1,5 +1,5 @@
 ---
-title: "MLnative post-morten"
+title: "MLnative post-mortem"
 description: 'Why our initial startup idea failed'
 date:   '2025-02-05'
 ---
