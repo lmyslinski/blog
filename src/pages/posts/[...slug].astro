@@ -2,6 +2,7 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import CoreLayout from "@/layouts/CoreLayout.astro";
 import Prose from "@/components/markdown/Prose.astro";
+import { Image, Picture } from "astro:assets";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -19,10 +20,16 @@ const { Content } = await post.render();
 <CoreLayout {...post.data}>
   {
     post.data.heroImage && (
-      <img
+      <Image
         src={post.data.heroImage}
         alt={post.data.title}
         class="w-full rounded-md pt-10 pb-12"
+        width={post.data.heroImageWidth}
+        height={post.data.heroImageHeight}
+        style={{
+          objectFit: post.data.heroImageHeight > 400 ? "cover" : "contain",
+          height: post.data.heroImageHeight > 400 ? "300px" : "auto",
+        }}
       />
     )
   }

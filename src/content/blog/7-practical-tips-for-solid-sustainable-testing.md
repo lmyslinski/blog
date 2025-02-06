@@ -3,6 +3,8 @@ title:  "7 practical tips for solid, sustainable testing"
 description: ""
 date: 2023-08-26
 heroImage: "/images/testing.jpg"
+heroImageWidth: 1024
+heroImageHeight: 1024
 ---
 
 # 7 practical tips for solid, sustainable testing

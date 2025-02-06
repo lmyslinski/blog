@@ -3,6 +3,8 @@ title: "A guide to NVIDIA's GPU Operator"
 description: 'How to get Nvidia cards running on K8s'
 date:   '2022-11-17'
 heroImage: "/images/happy-nvidia.png"
+heroImageWidth: 1024
+heroImageHeight: 1024
 ---
 
 # A guide to NVIDIA's GPU Operator
