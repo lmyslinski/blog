@@ -1,7 +1,7 @@
 import { Textarea } from "./ui/textarea";
 import { useZustand as useZustand } from "./zustand";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
+import { Label } from "./ui/label";
+import { Switch } from "./ui/switch";
 
 export default function Editor() {
   const { input, setInput, autoFix, setAutoFix } = useZustand();

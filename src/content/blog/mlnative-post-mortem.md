@@ -2,6 +2,7 @@
 title: "MLnative post-mortem"
 description: 'Why our initial startup idea failed'
 date:   '2025-02-05'
+heroImage: "/images/mlnative-post-mortem.png"
 ---
 
 You have to be a little egotistic to start a company. You need just the right amount of confidence, arrogance and skill to make this work. Nvidia's founder and CEO, Jensen Huang said that had he known how hard this would be he would never do it in the first place. 

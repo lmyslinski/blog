@@ -1,7 +1,8 @@
 ---
 title: "A guide to NVIDIA's GPU Operator"
-description: 'Lorem ipsum dolor sit amet'
+description: 'How to get Nvidia cards running on K8s'
 date:   '2022-11-17'
+heroImage: "/images/happy-nvidia.png"
 ---
 
 # A guide to NVIDIA's GPU Operator
