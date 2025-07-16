@@ -20,17 +20,22 @@ const { Content } = await post.render();
 <CoreLayout {...post.data}>
   {
     post.data.heroImage && (
-      <Image
-        src={post.data.heroImage}
-        alt={post.data.title}
-        class="w-full rounded-md pt-10 pb-12"
-        width={post.data.heroImageWidth}
-        height={post.data.heroImageHeight}
-        style={{
-          objectFit: post.data.heroImageHeight > 400 ? "cover" : "contain",
-          height: post.data.heroImageHeight > 400 ? "300px" : "auto",
-        }}
-      />
+      <div class="pt-10 pb-12 flex justify-center">
+        <Image
+          src={post.data.heroImage}
+          alt={post.data.title}
+          class="rounded-md"
+          width={post.data.heroImageWidth}
+          height={post.data.heroImageHeight}
+          style={{
+            objectFit: "contain",
+            maxHeight: "400px",
+            maxWidth: "100%",
+            width: "auto",
+            height: "auto",
+          }}
+        />
+      </div>
     )
   }
   <Prose>

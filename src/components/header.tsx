@@ -12,12 +12,6 @@ export default function Header() {
           </a>
         </div>
         <div className="flex items-center space-x-2 md:space-x-4">
-          <a className="text-muted-foreground" href="/">
-            Home
-          </a>
-          <a className="text-muted-foreground" href="/blog">
-            Articles
-          </a>
           <ModeToggle />
         </div>
       </div>

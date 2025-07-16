@@ -2,14 +2,14 @@
 title: "Are we trading our hard-earned intelligence for convenience?"
 description: "Productivity and skill erosion in the age of AI"
 date: 2025-07-16
-heroImage: "/images/cve-1.jpg"
-heroImageWidth: 2500
-heroImageHeight: 1708
+heroImage: "/images/whiplash.jpg"
+heroImageWidth: 316
+heroImageHeight: 300
 ---
 
 # Getting sucked in
 
-There are a number of "holy shit dude, that's awesome!" moments when you're going into AI coding. For me, the first copilot was such as experience. Then, there was Cursor which took it a step further with Composer / Agent mode. I could now delegate and implement moderately complex tasks! Finally, there was Claude Code, which is still the pinnacle of what we have available right now. You can plan and implement entire apps using natural language, how is that not fantastic?
+There are a number of "holy shit dude, that's awesome!" moments when you're getting into AI coding. For me, the first copilot was such an experience. Then, there was Cursor which took it a step further with Composer / Agent mode. I could now delegate and implement complex tasks! Finally, there was Claude Code, which is still the pinnacle of what we have available right now. You can plan and implement entire apps using natural language, how is that not fantastic?
 
 Unfortunately, the honeymoon phase doesn't last that long.
 
@@ -17,9 +17,9 @@ Unfortunately, the honeymoon phase doesn't last that long.
 
 As you start increasing the workloads you're delegating to AI, you're noticing the cracks more and more often. Even if everything is *technically correct*, the code rarely looks as if you had written it out by hand. 
 
-You've likely experienced this yourself. Code looks just a bit off, things are too verbose, there is a clear lack of overarching vision. You keep on prompting it out to align the implementation to keep it closer to what you'd originally intended. 
+You've likely experienced this yourself. Code looks just a bit off, things are too verbose, there is a clear lack of overarching vision. You keep on prompting it out to align the implementation to make it closer to what you had originally intended. 
 
-As the scope grows, it turns into a game of what-a-mole. The speed gains are cannibalized by the cleanup process. We now have studies to back this up.  
+As the scope grows, it turns into a game of what-a-mole. The speed gains are cannibalized by the cleanup process. We now have studies to [back this up](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/).  
 
 # The magic is gone
 
@@ -33,12 +33,12 @@ I decided it was time for a change - I stopped using AI completely and finally g
 
 It was almost like learning to program all over again - the most basic edits and navigation took far too long, but not for a moment was I bored nor in control. 
 
-What struck was that my brain was constantly engaged in making decisions I had long foregone:
+What struck my the most was that my brain was constantly engaged in making decisions I had long foregone:
 - What do I call this variable?
 - What's the correct type to use here?
 - What does the correct syntax look like here?
 
-I had to search documentation, read, process and understand it. The very skills that have made me a good engineer in the first place were finally surfacing again. And despite achieving less output, I know *I* have personally planned, thought out and implemented my vision. This is a hundred times more rewarding than just accepting something passable as "good enough" code. 
+I had to search through documentation, read it, process it and understand it. The very skills that have made me a good engineer in the first place were finally surfacing again. And despite achieving less output, I know *I* have personally planned, thought out and implemented my vision. This is a hundred times more rewarding than just accepting something passable as "good enough" code. 
 
 # What does the future of software look like?
 
@@ -54,17 +54,17 @@ Much like we're not allowing 3rd graders to use calculators, so that they learn 
 There are those that believe that the recent exponential growth in AI coding capabilities will continue - and we will be able to replace engineers completely. It's not hard to make a counterargument:
 
 - LLM's are trained on existing data / codebases. The majority of code is not good code, therefore the AI's code quality cannot exceed the average. 
-- We've already run out of non-synthetic data to train on. And since we're producing more and more AI-generated code, the training dataset is likely to get worse and worse. 
+- We've already [run out](https://www.forbes.com/sites/digital-assets/2025/01/20/from-chip-war-to-data-war-ais-next-battleground-explained/) of non-synthetic data to train on. And since we're producing more and more AI-generated code, the training dataset is likely to get worse and worse. 
 
 I won't go into other obvious limitations of context sizes, hallucinations etc. It's likely we'll find a solution for these, if not on the software side, then perhaps in the development process.
 
 The core issue still remains: We're sitting at the top and pulling the ladder up for all aspiring to join. 
 
-So unless there is a trend shift coming (perhaps when the bubble bursts), we'll soon find ourselves starved for good developers and overburdended with fixing vibe-coded systems.
+So unless there is a trend shift coming (perhaps when the bubble bursts), we'll soon find ourselves starved for good developers and overburdened with fixing vibe-coded systems.
 
 # Takeaway
 
-It's been 4 days since I've not written a single prompt - I've cancelled both of my Cursor and Claude Code plans. As a startup founder, it's unlikely I'll get to keep this priviledge of going slow. There's just too much basic boilerplate code that is required in any product, and AI is perfectly capable of doing that good enough. But I sure will try. 
+It's been 4 days since I've not written a single prompt - I've cancelled both of my Cursor and Claude Code plans. As a startup founder, it's unlikely I'll get to keep this privilege of going slow. There's just too much basic boilerplate code that is required in any product, and AI is perfectly capable of doing that good enough. But I sure will try. 
 
 Enjoying your work might just be worth it.
 
