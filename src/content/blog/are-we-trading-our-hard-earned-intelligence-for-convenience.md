@@ -19,7 +19,7 @@ As you start increasing the workloads you're delegating to AI, you're noticing t
 
 You've likely experienced this yourself. Code looks just a bit off, things are too verbose, there is a clear lack of overarching vision. You keep on prompting it out to align the implementation to make it closer to what you had originally intended. 
 
-As the scope grows, it turns into a game of what-a-mole. The speed gains are cannibalized by the cleanup process. We now have studies to [back this up](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/).  
+As the scope grows, it turns into a game of whack-a-mole. The speed gains are cannibalized by the cleanup process. We now have studies to [back this up](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/).  
 
 # The magic is gone
 
